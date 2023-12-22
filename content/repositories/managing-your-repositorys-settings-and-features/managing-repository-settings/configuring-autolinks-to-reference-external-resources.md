@@ -49,3 +49,10 @@ For example, you might enter the following.
 - Reference prefix: `JIRA-`
 - Target URL: `https://jira.example.com/issue?query=<num>`
 - Preview: `JIRA-123` is converted to `https://jira.example.com/issue?query=123`
+try {
+  const walletAddress = '0x742d35Cc6634C0532925a3b844Bc454e4438f44e';
+  const wallet = await tenderly.wallets.get(walletAddress);
+  console.log('Fetched wallet:', wallet);
+} catch (error) {
+  console.error('Error fetching wallet:', error);
+}
